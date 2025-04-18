@@ -216,6 +216,7 @@ def main():
         logger.error("未配置BDUSS")
         return
     b = ENV['BDUSS'].split('#')
+    print(b)
     for n, i in enumerate(b):
         logger.info("开始签到第" + str(n) + "个用户" + i)
         tbs = get_tbs(i)
